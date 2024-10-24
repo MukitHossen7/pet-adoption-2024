@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peddy</title>
+
+    <!-- daisyUI-cnd-link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyUI-cnd-link -->
+
+    <!-- google-font-link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google-font-link -->
+
+    <!-- font-awesome-cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font-awesome-cdn -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#0E7A81",
+              dark1: "#131313",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Lato";
+      }
+    </style>
+  </head>
+  <body>
+    <header class="w-11/12 mx-auto">
+      <!-- navbar-section -->
+      <nav class="pt-4">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2shadow text-base font-light"
+              >
+                <li><a href="">Home</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+            <div class="flex gap-3 items-center">
+              <img src="./images/logo.webp" alt="" />
+              <h3 class="font-extrabold text-2xl text-dark1">Peddy</h3>
+            </div>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul
+              class="menu menu-horizontal px-1 font-medium text-base text-dark1"
+            >
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="border border-slate-300 px-3 py-2 rounded-full"
+              ><i class="fa-regular fa-user text-xl"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar-section -->
+
+      <!-- hero-section -->
+      <section>
+        <section class="pt-12 sm:pt-16">
+          <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="text-center">
+              <div class="flex gap-10 justify-center">
+                <p
+                  class="font-bold text-[rgba(19,19,19,0.7)] text-lg md:text-xl mb-5"
+                >
+                  Bringing Families Together
+                </p>
+                <img
+                  src="./images/fire.png"
+                  alt=""
+                  class="w-7 h-7 object-cover"
+                />
+              </div>
+              <p
+                class="max-w-4xl mx-auto mb-4 text-4xl font-bold leading-tight text-dark1 sm:leading-tight sm:text-5xl lg:text-6xl lg:leading-tight"
+              >
+                Your Path to Adoption Starts Here
+              </p>
+              <h1
+                class="max-w-2xl mx-auto px-6 text-lg text-gray-500 font-medium"
+              >
+                Your Path to Adoption Starts Here" is a welcoming statement that
+                invites individuals or families to begin the process of adopting
+                a pet, often from shelters or rescue organizations
+              </h1>
+              <div
+                class="px-8 sm:items-start sm:justify-center sm:px-0 sm:space-x-5 sm:flex mt-9"
+              >
+                <a
+                  href="#scroll"
+                  title=""
+                  class="mb-3 sm:mb-0 inline-flex items-center justify-center w-full px-8 py-3 text-lg font-bold text-white bg-primary sm:w-auto rounded-xl"
+                  role="button"
+                >
+                  View More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white">
+            <div class="relative mx-auto mt-4 md:mt-8">
+              <div class="lg:max-w-4xl lg:mx-auto">
+                <img class="px-4 md:mpx-8" src="./images/pet.webp" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- hero-section -->
+    </header>
+    <main class="w-11/12 mx-auto" id="scroll">
+      <!-- adopt-section -->
+      <section class="flex flex-col items-center pt-10 text-center">
+        <h3 class="text-2xl md:text-4xl text-dark1 font-bold mb-6">
+          Adopt Your Best Friend
+        </h3>
+        <p class="text-[rgba(19,19,19,0.7)] font-medium text-base max-w-2xl">
+          Adopt Your Best Friend refers to the concept of adopting a dog from
+          shelters or rescues. Dogs are often called man's best friend because
+          of their loyalty, companionship, and unconditional love
+        </p>
+      </section>
+      <!-- adopt-section -->
+
+      <!-- Fetch-All-Pet-Categories-button  -->
+      <section
+        id="btnCategory"
+        class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pt-12 justify-between"
+      ></section>
+      <div class="text-center mt-12" id="loadingBar">
+        <span class="loading loading-bars loading-lg"></span>
+      </div>
+      <!-- Fetch-All-Pet-Categories-button  -->
+
+      <!-- dynamic-card-section -->
+      <section class="pt-8">
+        <div class="flex justify-between items-center mb-8">
+          <p class="text-dark1 font-extrabold text-xl">Best Deal For you</p>
+          <button
+            onclick="sortByPrice()"
+            class="btn bg-primary hover:bg-primary text-white font-medium text-lg mt-4"
+          >
+            Sort by Price
+          </button>
+        </div>
+        <!-- spiner-container -->
+        <div class="text-center mt-12 mb-10" id="cardLoading">
+          <span class="loading loading-bars loading-lg"></span>
+        </div>
+        <!-- spiner-container -->
+        <div class="flex flex-col lg:flex-row gap-6" id="mainCardContainer">
+          <!-- left-section -->
+          <div class="w-full lg:w-9/12">
+            <div
+              id="cardContainer"
+              class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+            >
+              <!-- use-dynamic-card -->
+            </div>
+          </div>
+          <!-- left-section -->
+          <!-- right-section -->
+          <div class="w-full lg:w-3/12 border-2 border-slate-100 rounded-lg">
+            <div
+              class="grid gap-6 grid-cols-2 p-5"
+              id="showImageContainer"
+            ></div>
+          </div>
+          <!-- right-section -->
+        </div>
+      </section>
+      <!-- dynamic-card-section -->
+    </main>
+    <!-- footer-section -->
+    <footer class="bg-dark1 mt-14">
+      <section class="py-24">
+        <div class="mt-8">
+          <div class="mx-auto w-11/12 px-4 xl:px-0">
+            <div
+              class="flex gap-4 md:gap-12 flex-col items-center md:justify-between sm:px-[18px] md:flex-row md:px-10 text-center md:text-start"
+            >
+              <div>
+                <div
+                  class="flex gap-3 items-center justify-center md:justify-start"
+                >
+                  <img src="./images/logo.webp" alt="" />
+                  <h3 class="text-white font-bold text-2xl">Peddy</h3>
+                </div>
+                <div
+                  class="mt-[18px] text-sm font-normal text-[rgba(255,255,255,0.9)] space-y-2"
+                >
+                  <p>Location: av.Washington 165,NYCA 54003</p>
+                  <p>Phone: +31 85 964 47 25</p>
+                  <p>Email:info@yourdomain.com</p>
+                  <p>Openings hours: 9.00AM - 5.00PM</p>
+                </div>
+                <div
+                  class="mt-[18px] flex items-center justify-center md:justify-start gap-4"
+                >
+                  <a class="hover:scale-110" target="_blank" href="#">
+                    <img
+                      alt="linkdin icon"
+                      loading="lazy"
+                      width="30"
+                      height="30"
+                      decoding="async"
+                      data-nimg="1"
+                      style="color: transparent"
+                      src="./images/facebook.png" /></a
+                  ><a class="hover:scale-110" target="_blank" href="/"
+                    ><img
+                      alt="twitter"
+                      loading="lazy"
+                      width="30"
+                      height="30"
+                      decoding="async"
+                      data-nimg="1"
+                      style="color: transparent"
+                      src="./images/Vector (2).png" /></a
+                  ><a class="hover:scale-110" target="_blank" href="/"
+                    ><img
+                      alt="youtube"
+                      loading="lazy"
+                      width="36"
+                      height="36"
+                      decoding="async"
+                      data-nimg="1"
+                      style="color: transparent"
+                      src="./images/Group 6.png" /></a
+                  ><a class="hover:scale-110" target="_blank" href=""
+                    ><img
+                      alt="twitter icon"
+                      loading="lazy"
+                      width="36"
+                      height="36"
+                      decoding="async"
+                      data-nimg="1"
+                      style="color: transparent"
+                      src="./images/Group 7.png"
+                  /></a>
+                </div>
+              </div>
+
+              <div
+                class="mt-6 flex flex-col justify-between sm:flex-row md:mt-0"
+              >
+                <div class="">
+                  <p class="text-white text-lg font-bold">Pages</p>
+                  <ul class="text-[rgba(255,255,255,0.6)] text-sm mt-6">
+                    <li class="mt-4">
+                      <a>Home</a>
+                    </li>
+                    <li class="mt-4">
+                      <a>About Us </a>
+                    </li>
+                    <li class="mt-4">
+                      <a>Animals</a>
+                    </li>
+                    <li class="mt-4">
+                      <a>Foundation</a>
+                    </li>
+                    <li class="mt-4">
+                      <a>Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="mt-6">
+                <p class="text-white font-bold text-lg mb-6">Drop a Message</p>
+                <label
+                  class="input input-bordered flex items-center gap-2 bg-[rgba(255,255,255,0.05)]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    class="h-4 w-4 opacity-70 text-white"
+                  >
+                    <path
+                      d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z"
+                    />
+                    <path
+                      d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z"
+                    />
+                  </svg>
+                  <input
+                    type="text"
+                    class="text-white"
+                    placeholder="Enter your email"
+                  />
+                </label>
+                <button
+                  class="btn w-full bg-primary hover:bg-primary text-white font-semibold text-lg mt-4"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-- Open the modal using ID.showModal() method -->
+    <dialog id="my_modal" class="modal">
+      <div class="modal-box lg:max-w-3xl" id="modalContainer"></div>
+    </dialog>
+
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- <button class="btn" onclick="timer_modal.showModal()">open modal</button> -->
+    <dialog id="timer_modal" class="modal">
+      <div class="modal-box">
+        <div
+          class="modal-action flex flex-col items-center justify-center space-y-3"
+        >
+          <img src="./images/handshake.png" alt="" class="w-24" />
+          <h2 class="font-bold text-5xl">Congrats</h2>
+          <p class="font-semibold text-xl text-slate-700">
+            Adoption Process is Start For you Pet
+          </p>
+          <span id="count" class="font-bold text-4xl">3</span>
+        </div>
+      </div>
+    </dialog>
+    <!-- footer-section -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
